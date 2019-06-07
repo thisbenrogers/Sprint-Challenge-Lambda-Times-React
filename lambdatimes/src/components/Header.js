@@ -49,8 +49,6 @@ let dn = new Date(Date.now());
 let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 let readableDate = dn.toLocaleString('en-US', options);
 
-// TODO lookup date.now arg 
-
 console.log(dn);
 
 const Header = () => {
