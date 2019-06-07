@@ -16,7 +16,7 @@ const Card = props => {
 };
 
 Card.propTpyes = {
-  headline: PropTypes.string,
+  headline: PropTypes.string.isRequired,
   img: PropTypes.string,
   author: PropTypes.string
 }

@@ -45,10 +45,18 @@ const Temp = styled.span`
   flex: 1;
 `;
 
+let dn = new Date(Date.now());
+let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+let readableDate = dn.toLocaleString('en-US', options);
+
+// TODO lookup date.now arg 
+
+console.log(dn);
+
 const Header = () => {
   return (
     <StyledHeader>
-      <StyledDate>SMARCH 32, 2018</StyledDate>
+      <StyledDate>{readableDate}</StyledDate>
       <h1>Lambda Times</h1>
       <Temp>98°</Temp>
     </StyledHeader>
