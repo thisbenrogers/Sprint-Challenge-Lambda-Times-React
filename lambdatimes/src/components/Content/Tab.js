@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Tab = props => {
 
@@ -21,6 +22,10 @@ const Tab = props => {
     </Tab>
   );
 };
+
+Tab.propTypes = {
+  tab: PropTypes.string
+}
 
 // Make sure you include PropTypes on your props.
 

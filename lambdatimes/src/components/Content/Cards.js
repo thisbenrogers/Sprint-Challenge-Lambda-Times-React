@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Card from './Card';
 
@@ -15,6 +16,10 @@ const Cards = props => {
           new Card component for each passing the card as the only prop*/}
     </CardContainer>
   )
+}
+
+Cards.propTypes = {
+  card: PropTypes.arrayOf(PropTypes.object),
 }
 
 // Make sure you include prop types for all of your incoming props
