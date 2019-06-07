@@ -120,6 +120,9 @@ body {
 .top-bar .container .container-right span {
   cursor: pointer;
 }
+
+/* End TopBar Styles */
+
 .header {
   display: flex;
   justify-content: space-between;
